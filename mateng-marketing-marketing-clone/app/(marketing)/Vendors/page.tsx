@@ -1,6 +1,6 @@
 import { Footer } from "../_components/footer-section";
 import { QuickLink } from "../_components/quick-link-section";
-import { VendorsMain } from "./_components/discover-main";
+import { VendorsMain } from "./_components/main-vendor";
 
 export default function VendorsMain() {
   return (
