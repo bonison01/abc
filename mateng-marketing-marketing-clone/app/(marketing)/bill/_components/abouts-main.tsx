@@ -1,22 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import { Content } from "./content";
-export const poppinsFont = Poppins({
-  subsets: ["latin"],
-  weight: ["900", "800", "700", "500", "400", "300", "200", "100", "600"],
-});
-
 
 export function AboutsMain() {
   return (
-    <div className="w-full px-4 py-6 sm:w-3/6 flex flex-col items-center my-auto">
-      <p
-        className={cn(
-          "text-blue-800 text-lg font-medium sm:font-semibold",
-          poppinsFont.className
-        )}
-      >
-        Quick links
-      </p>
+    <div className="text-center pt-20 pb-10 sm:pt-32 flex flex-col justify-center items-center space-y-4">
+      <div className="border border-gray-400 rounded-lg p-4">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <Link href="/test">
+            <a>Test</a>
+          </Link>
+        </button>
+      </div>
+    </div>
   );
 }
