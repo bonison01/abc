@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function AboutsMain() {
   return (
-    <div className="text-center pt-20 pb-10 sm:pt-32 flex flex-col justify-center items-center space-y-4">
+    <div>
       <h1>Welcome to AboutsMain Component</h1>
       <p>This is a test component.</p>
 
