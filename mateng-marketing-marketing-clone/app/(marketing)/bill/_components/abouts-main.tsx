@@ -14,7 +14,8 @@ export function AboutsMain() {
           frameBorder="0"
           allowFullScreen
         ></iframe>
-
+      </div>
+      <div>
         {/* Button to navigate to "/test" */}
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           <Link href="/test">
