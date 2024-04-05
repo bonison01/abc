@@ -8,12 +8,12 @@ export function AboutsMain() {
       <div className="w-full max-w-screen-lg mx-auto mt-8">
         <iframe
           src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTqhJ96Q5S2xKtvtwjqmytwZeOCZnkBBOP7eJfMgVmoIHbg1LA-V9YhCocI2_u7cwkRPvTqPcep34yx/pubhtml"
-          width="100%"
+          width="200%"
           height="600" // Adjust the height as needed
           frameBorder="0"
           allowFullScreen
           title="Embedded Google Sheets"
-          style={{ minHeight: "400px" }} // Set minimum height for responsiveness
+          style={{ minHeight: "800px" }} // Set minimum height for responsiveness
         ></iframe>
       </div>
 
