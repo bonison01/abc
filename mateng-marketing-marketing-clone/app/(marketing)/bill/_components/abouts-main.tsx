@@ -5,6 +5,18 @@ import { Content } from "./content";
 export function AboutsMain() {
   return (
     <div className="text-center pt-20 pb-10 sm:pt-32 flex flex-col justify-center items-center space-y-4">
+      {/* Embedded Google Sheet using iframe */}
+      <div className="border border-gray-400 rounded-lg p-4">
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/e/your_spreadsheet_id/pubhtml?widget=true&amp;headers=false"
+          width="100%"
+          height="400" // Adjust the height as per your requirement
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+
+      {/* Buttons with Links (Optional) */}
       <div className="border border-gray-400 rounded-lg p-4">
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           <Link href="/padding_order">
