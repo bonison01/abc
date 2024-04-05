@@ -15,6 +15,8 @@ export function AboutsMain() {
           title="Embedded Google Sheets"
         ></iframe>
       </div>
+      {/* Embed the iframe here */}
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTqhJ96Q5S2xKtvtwjqmytwZeOCZnkBBOP7eJfMgVmoIHbg1LA-V9YhCocI2_u7cwkRPvTqPcep34yx/pubhtml" width="100%" height="400"></iframe>
     </div>
   );
 }
