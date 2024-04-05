@@ -8,7 +8,7 @@ export function AboutsMain() {
       <p>This is a test component.</p>
 
       {/* Embedded Google Sheets iframe */}
-      <div className="w-full">
+      <div className="w-full max-w-screen-lg mx-auto">
         <iframe
           src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTqhJ96Q5S2xKtvtwjqmytwZeOCZnkBBOP7eJfMgVmoIHbg1LA-V9YhCocI2_u7cwkRPvTqPcep34yx/pubhtml"
           width="100%"
@@ -16,6 +16,7 @@ export function AboutsMain() {
           frameBorder="0"
           allowFullScreen
           title="Embedded Google Sheets"
+          style={{ width: "100%", maxWidth: "100%" }}
         ></iframe>
       </div>
 
