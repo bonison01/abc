@@ -10,6 +10,21 @@ export function AboutsMain() {
           <a>Test</a>
         </Link>
       </button>
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <Link href="/test">
+          <a>Test</a>
+        </Link>
+      </button>
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <Link href="/test">
+          <a>Test</a>
+        </Link>
+      </button>
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <Link href="/test">
+          <a>Test</a>
+        </Link>
+      </button>
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto mt-8">
         <iframe
