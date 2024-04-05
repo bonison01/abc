@@ -8,23 +8,23 @@ export function AboutsMain() {
       <div className="flex justify-center space-x-4 mb-4">
         {/* Buttons with Link components */}
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          <Link href="/test">
-            <a>Test 1</a>
+          <Link href="/Today Orders">
+            <a>Today Orders</a>
           </Link>
         </button>
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          <Link href="/test">
-            <a>Test 2</a>
+          <Link href="/Total Orders">
+            <a>Total Orders</a>
           </Link>
         </button>
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          <Link href="/test">
-            <a>Test 3</a>
+          <Link href="/Pending Orders">
+            <a>Pending Orders</a>
           </Link>
         </button>
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          <Link href="/test">
-            <a>Test 4</a>
+          <Link href="/Balance">
+            <a>Balance</a>
           </Link>
         </button>
       </div>
@@ -32,8 +32,8 @@ export function AboutsMain() {
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTqhJ96Q5S2xKtvtwjqmytwZeOCZnkBBOP7eJfMgVmoIHbg1LA-V9YhCocI2_u7cwkRPvTqPcep34yx/pubhtml"
-          width="100%"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQEkoMHqSs2jn7Jc2G0ebklglo-iK2dfhbPyRaUs6FWvFroOd2Tvcvp7x_68DELr1PCiiClRq0ZKtJ0/pubhtml?gid=1385903661&single=true"
+          width="300%"
           height="600" // Adjust the height as needed
           frameBorder="0"
           allowFullScreen
