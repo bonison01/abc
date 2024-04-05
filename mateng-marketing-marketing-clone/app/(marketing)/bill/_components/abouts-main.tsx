@@ -11,13 +11,6 @@ export function AboutsMain() {
           <a>Test</a>
         </Link>
       </button>
-
-      {/* Google Sheets iframe */}
-      <div>
-        <iframe
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTqhJ96Q5S2xKtvtwjqmytwZeOCZnkBBOP7eJfMgVmoIHbg1LA-V9YhCocI2_u7cwkRPvTqPcep34yx/pubhtml"
-        ></iframe>
-      </div>
     </div>
   );
 }
