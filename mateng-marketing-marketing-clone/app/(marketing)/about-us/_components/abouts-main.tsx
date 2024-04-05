@@ -39,6 +39,8 @@ export function AboutsMain() {
           <img src={"/youtube.png"} alt="youtube" className="h-10 w-10 mr-4" />
         </Link>
       </div>
+      {/* Embed the iframe here */}
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTqhJ96Q5S2xKtvtwjqmytwZeOCZnkBBOP7eJfMgVmoIHbg1LA-V9YhCocI2_u7cwkRPvTqPcep34yx/pubhtml" width="100%" height="400"></iframe>
     </div>
   );
 }
