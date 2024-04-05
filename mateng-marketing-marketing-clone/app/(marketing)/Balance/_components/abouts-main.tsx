@@ -8,23 +8,23 @@ export function AboutsMain() {
       <div className="flex justify-center space-x-4 mb-4">
         {/* Buttons with Link components */}
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          <Link href="/test">
-            <a>Test 1</a>
+          <Link href="/Today Orders">
+            <a>Today Orders</a>
           </Link>
         </button>
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          <Link href="/test">
-            <a>Test 2</a>
+          <Link href="/Total Orders">
+            <a>Total Orders</a>
           </Link>
         </button>
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          <Link href="/test">
-            <a>Test 3</a>
+          <Link href="/Pending Orders">
+            <a>Pending Orders</a>
           </Link>
         </button>
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          <Link href="/test">
-            <a>Test 4</a>
+          <Link href="/Balance">
+            <a>Balance</a>
           </Link>
         </button>
       </div>
