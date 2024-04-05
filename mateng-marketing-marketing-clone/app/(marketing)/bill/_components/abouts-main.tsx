@@ -1,8 +1,25 @@
 import React from "react";
 import Link from "next/link";
-import { Content } from "./content";
+import { useEffect, useRef } from "react";
 
 export function AboutsMain() {
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    // Adjust the iframe height based on its content
+    if (iframeRef.current) {
+      const iframe = iframeRef.current;
+      const resizeIframe = () => {
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+      };
+      iframe.onload = resizeIframe;
+      window.addEventListener("resize", resizeIframe);
+      return () => {
+        window.removeEventListener("resize", resizeIframe);
+      };
+    }
+  }, []);
+
   return (
     <div className="text-center pt-20 pb-10 sm:pt-32 flex flex-col justify-center items-center space-y-4">
       {/* Button to navigate to "/test" */}
@@ -11,6 +28,19 @@ export function AboutsMain() {
           <a>Test</a>
         </Link>
       </button>
+
+      {/* Embedded Google Sheets iframe */}
+      <div className="border border-gray-400 rounded-lg p-4 mt-8 w-full max-w-screen-lg">
+        <iframe
+          ref={iframeRef}
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTqhJ96Q5S2xKtvtwjqmytwZeOCZnkBBOP7eJfMgVmoIHbg1LA-V9YhCocI2_u7cwkRPvTqPcep34yx/pubhtml?gid=691031807&single=true"
+          width="100%"
+          height="400"
+          frameBorder="0"
+          allowFullScreen
+          title="Embedded Google Sheets"
+        ></iframe>
+      </div>
     </div>
   );
 }
